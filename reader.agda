@@ -8,10 +8,6 @@ module reader where
   Reader : Set → Set → Set
   Reader E A = E → A
 
-  infixl 20 _$_
-  _$_ : {A B : Set} → Reader A B → A → B
-  f $ x = f x
-
   mapReader : {A B E : Set} → (A → B) →
               Reader E A → Reader E B
   mapReader f x = f ∘ x

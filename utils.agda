@@ -5,3 +5,10 @@ module utils where
 
   id : {A : Set} → A → A
   id x = x
+
+  infixl 20 _$_
+  _$_ : {A B : Set} → (A → B) → A → B
+  f $ x = f x
+
+  ev : {A B : Set} → A → (A → B) → B
+  ev x f = f x

@@ -8,9 +8,6 @@ module continuation where
   Cont : Set → Set → Set
   Cont E A = (A → E) → E
 
-  ev : {A E : Set} → (A → E) → Cont E A → E
-  ev f ϕ = ϕ f
-
   mapCont : {A B E : Set} → (A → B) → Cont E A → Cont E B
   mapCont f ϕ = λ g → ϕ (g ∘ f)
 
