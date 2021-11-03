@@ -9,7 +9,7 @@ we can, however, explicitly prove them in this form:
 
 `prf : {A B : Set} \to {f g : A \to B} \to`
 
-`······(x : A) \to f x \== g x`
+`      (x : A) \to f x \== g x`
 
 This means, however, that we need something like
 
