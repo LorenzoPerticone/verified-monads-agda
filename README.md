@@ -19,7 +19,7 @@ This means, however, that we need something like
 
 `                ((x : A) \to f x \== g x) \to`
 
-`                (y : F A) \to \phi f x \== \phi g x`
+`                (y : F A) \to \phi f y \== \phi g y`
 				 
 for a large class of functions `\phi : (A \to B) \to F A \to F B`.
 The trick used here is to embed this function as part of the definition of "functor".
